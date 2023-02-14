@@ -39,7 +39,7 @@ useEffect(() => {
 <h1 className='font-semibold text-lg text-center lg:text-2xl'>
  Image Generation
 </h1>
-<input type="text" ref={searchTxt} className=' mt-8 lg:w-96 text-center focus:border-none outline-none focus:outline-2 focus:outline-blue-300  p-3 border-2 rounded ' placeholder='Enter Description'></input>
+<input type="text" ref={searchTxt} className=' mt-8 lg:w-96 mx-auto text-center focus:border-none outline-none focus:outline-2 focus:outline-blue-300  p-3 border-2 rounded ' placeholder='Enter Description'></input>
 <br></br>
 <button className='bg-green-500 my-12 text-white p-3 rounded-tl rounded-br-md    transition-all shadow-md ' onClick={()=>setsearch(searchTxt.current.value)}>Generate</button>
 </div>
@@ -53,7 +53,7 @@ useEffect(() => {
 className="lg:hidden"
 >Loading...</h1>:""}
 </div>
-<div className="absolute bottom-0 lg:flex lg:justify-around text-sm  bg-gray-100 p-1  w-full"><p className="text-center">Image are generated using <b className="text-blue-400">GPT-3 API</b> by<b> Open AI</b></p>
+<div className="lg:absolute lg:bottom-0 lg:flex lg:justify-around text-sm  bg-gray-100 p-1  w-full"><p className="text-center">Image are generated using <b className="text-blue-400">GPT-3 API</b> by<b> Open AI</b></p>
 <br></br>
 <p className="text-center">Created and hosted By : Mohamed Abdul Rahman</p>
 </div>
