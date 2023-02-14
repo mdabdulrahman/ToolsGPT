@@ -34,14 +34,14 @@ useEffect(() => {
 
     return (
     <div className="font-['Poppins']">
-      <div className="   my-6  mx-auto w-3/4   lg:flex lg:justify-between lg:my-auto lg:items-center">
+      <div className="   my-6  mx-auto w-3/4  text-center lg:flex lg:justify-between lg:my-auto lg:items-center">
       <div className=" lg:my-48 lg:mx-20 ">
 <h1 className='font-semibold text-lg text-center lg:text-2xl'>
  Image Generation
 </h1>
-<input type="text" ref={searchTxt} className=' mt-8 lg:w-96  text-center focus:border-none outline-none focus:outline-2 focus:outline-blue-300  p-3 border-2 rounded ' placeholder='Enter Description'></input>
+<input type="text" ref={searchTxt} className=' mt-8 lg:w-96 mx-auto text-center focus:border-none outline-none focus:outline-2 focus:outline-blue-300  p-3 border-2 rounded w-5/6' placeholder='Enter Description'></input>
 <br></br>
-<button className='bg-green-500 my-12 text-white w-1/2 mx-auto p-3 rounded-tl rounded-br-md    transition-all shadow-md ' onClick={()=>setsearch(searchTxt.current.value)}>Generate</button>
+<button className='bg-green-500 my-12 text-white p-3 rounded-tl rounded-br-md    transition-all shadow-md ' onClick={()=>setsearch(searchTxt.current.value)}>Generate</button>
 </div>
 {/* image area */}
 
