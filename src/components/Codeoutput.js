@@ -55,7 +55,7 @@ className="lg:hidden"
 >Loading...</h1>:""}
 </div>
 </div>
-<div className="lg:absolute lg:bottom-0 lg:flex lg:justify-around text-sm  bg-gray-100 p-1  w-full"><p className="text-center">Image are generated using <b className="text-blue-400">GPT-3 API</b> by<b> Open AI</b></p>
+<div className={`${response==loader_snail?"absolute bottom-0 ":" "}`+"lg:absolute lg:bottom-0  lg:flex lg:justify-around text-sm  bg-gray-100 p-1  w-full"}><p className="text-center">Image are generated using <b className="text-blue-400">GPT-3 API</b> by<b> Open AI</b></p>
 <br></br>
 <p className="text-center">Created and hosted By : Mohamed Abdul Rahman</p>
 </div>
