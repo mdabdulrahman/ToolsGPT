@@ -49,11 +49,13 @@ useEffect(() => {
   {search!=""?<img src={response} className="w-full rounded-md mx-auto lg:w-4/6 " alt="gptimage_creation"></img>:<h1>Give any query to generate Image</h1>}
 
 </div>
-{response!=loader_snail?<a  className='bg-blue-500 my-12 text-white p-3 rounded-bl rounded-tr-md  lg:hidden  transition-all shadow-md ' href={response} >View Full Image</a>:search!=""?<h1
+<div className="my-12">
+{response!=loader_snail?<a  className='bg-blue-500  text-white p-3 rounded-bl rounded-tr-md  lg:hidden  transition-all shadow-md ' href={response} >View Full Image</a>:search!=""?<h1
 className="lg:hidden"
 >Loading...</h1>:""}
 </div>
-<div className="absolute bottom-0 lg:flex lg:justify-around text-sm  bg-gray-100 p-1  w-full"><p className="text-center">Image are generated using <b className="text-blue-400">GPT-3 API</b> by<b> Open AI</b></p>
+</div>
+<div className="lg:absolute lg:bottom-0 lg:flex lg:justify-around text-sm  bg-gray-100 p-1  w-full"><p className="text-center">Image are generated using <b className="text-blue-400">GPT-3 API</b> by<b> Open AI</b></p>
 <br></br>
 <p className="text-center">Created and hosted By : Mohamed Abdul Rahman</p>
 </div>
