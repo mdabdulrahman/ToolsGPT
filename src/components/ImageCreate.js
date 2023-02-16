@@ -1,6 +1,6 @@
 import {React,useState,useEffect,useRef} from 'react'
 import loader_snail from "./loader_snail.gif"
-
+import Header from './Header'
 import {  OpenAIApi,Configuration } from "openai";
 function ImageCreate() {
 
@@ -34,6 +34,7 @@ useEffect(() => {
 
     return (
     <div className="font-['Poppins']">
+    <Header/>
       <div className="   my-6  mx-auto w-3/4  text-center lg:flex lg:justify-between lg:my-auto lg:items-center">
       <div className=" lg:my-48 lg:mx-20 ">
 <h1 className='font-semibold text-lg text-center lg:text-2xl'>

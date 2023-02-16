@@ -1,5 +1,6 @@
 import {React,useState,useEffect,useRef} from 'react'
 import {  OpenAIApi,Configuration } from "openai";
+import Header from './Header'
 function CodeCompletion()
 {
   const configuration=new Configuration(
@@ -36,6 +37,7 @@ useEffect(
 
   return(
     <div >
+    <Header/>
     <div className="font-['Poppins'] lg:mt-6 mt-4">
     <h1 className="  text-center  text-xl font-semibold"><span className="text-blue-400">Code</span> <span className="text-red-400">Suggestion</span></h1>
     <div className="font-mono my-6 text-center">
