@@ -2,7 +2,7 @@ import {React,useState,useEffect,useRef} from 'react'
 import loader_snail from "./loader_snail.gif"
 
 import {  OpenAIApi,Configuration } from "openai";
-function Codeoutput() {
+function ImageCreate() {
 
   const configuration=new Configuration(
   {
@@ -20,7 +20,7 @@ useEffect(() => {
   openai.createImage({
 
     prompt: search,
-  n: 2,
+  n: 1,
   size: "1024x1024",
 
   }).then(r=>{
@@ -42,6 +42,7 @@ useEffect(() => {
 <input type="text" ref={searchTxt} className=' mt-8 lg:w-96 mx-auto text-center focus:border-none outline-none focus:outline-2 focus:outline-blue-300  p-3 border-2 rounded w-full' placeholder='Enter Description'></input>
 <br></br>
 <button className='bg-green-500 my-12 text-white p-3 rounded-tl rounded-br-md    transition-all shadow-md ' onClick={()=>setsearch(searchTxt.current.value)}>Generate</button>
+
 </div>
 {/* image area */}
 
@@ -63,4 +64,4 @@ className="lg:hidden"
   )
 
 }
-export default Codeoutput
+export default ImageCreate
