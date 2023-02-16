@@ -6,7 +6,7 @@ function Header()
 
   return(
     <div className="font-['Poppins']">
-    <div className="bg-purple-100 py-3 flex justify-center items-center gap-4">
+    <div className="bg-purple-100 py-3 flex justify-center items-center lg:gap-4 gap-2">
 
 <img className="w-8" src={logo}/>
     <h1 className="text-xl text-center font-semibold  text-purple-600 ">AI Tools</h1>
